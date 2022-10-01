@@ -13,7 +13,7 @@ body{
 }
 
 div#headerPag {
-    background-color: var(--CaféDoPorto-4);
+    background-color: var(--CaféDoPorto-3);
     min-height: 50px;
     display: flex;
     flex-direction: row;
