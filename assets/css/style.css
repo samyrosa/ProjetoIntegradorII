@@ -1,43 +1,107 @@
 :root {
     --CaféDoPorto-1: #001C01;
     --CaféDoPorto-2: #357758;
-    --CaféDoPorto-3: #DFD7A5;
+    --CaféDoPorto-3: #E8E2C2;
     --CaféDoPorto-4: #E38B39;
     --CaféDoPorto-5: #3F0300;
 
     --CaféDoPorto-bg: #36524D;
 }
 
-body{
+body {
     background-color: var(--CaféDoPorto-bg) !important;
+    font-family: 'Montserrat' !important;
 }
 
-div#headerPag {
+a {
+    text-decoration: none !important;
+}
+
+/* HEADER */
+@media (max-width: 992px) {
+    header#headerPag>section#navBnt{
+        display: none !important;
+    }
+    nav#navHeader {
+     padding: 0 !important;
+     margin-bottom: 50px !important;
+     flex-direction: column !important;
+     align-items: flex-start !important;
+    }
+    header{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    header#headerPag{
+        gap: 20px !important;
+        justify-content: flex-start !important;
+    }
+}
+
+header#headerPag {
     background-color: var(--CaféDoPorto-3);
-    min-height: 50px;
+    min-height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* padding-left: 50px; */
 }
 
-div#headerPag>nav {
+nav#navHeader {
+    min-width: 355px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 30px;
     gap: 20px;
+    font-size: 16px;
 }
 
-div#headerPag>section {
+div.offcanvas-body {
+    background-color: var(--CaféDoPorto-3);
+}
+div.offcanvas-header {
     background-color: var(--CaféDoPorto-2);
-    border-radius: 0px 0px 0px 35px;
-    min-height: 50px;
+    color: white;
+}
+div#navbarResp{
+ width: 300px;
+}
 
+header#headerPag>section#navBnt {
+    min-height: 55px;
+    min-width: 355px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
     padding: 0px 20px;
     gap: 20px;
+    justify-content: flex-end;
+}
+
+#logoHeader {
+    width: 200px;
+}
+
+/* BANNER */
+.bannerComprido {
+    min-height: 250px;
+}
+
+#bannerLocal.bannerComprido {
+    background-color: var(--CaféDoPorto-5);
+    color: white;
+}
+
+/* RODAPÉ */
+footer {
+    min-height: 250px;
+    background-color: var(--CaféDoPorto-1);
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
 }
