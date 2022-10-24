@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café do Porto</title>
+    <link rel="shortcut icon" href="../assets/image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-lg py-3 d-flex flex-column gap-2">
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <!-- Tornar responsivo -->
+        <header id="headerPag" class="navbar shadow py-0">
+            <nav class="navbar navbar-expand-lg ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" tabpaginaInicial="-1"
+                    data-bs-target="#navbarResp" aria-controls="navbarResp" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabpaginaInicial="-1" id="navbarResp">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Café do Porto</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column">
+                        <nav id="navHeader" class="gap-2">
+                            <a class="nav-link fw-bold" href="paginaInicial.html">Home</a>
+                            <a class="nav-link" href="cardapio.html">Cardápio</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </nav>
+                        <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
+                            <button type="button" class="btn btn-sm btn-outline-success">Entrar</button>
+                            <button type="button" class="btn btn-sm btn-success">Cadastrar</button>
+                        </section>
+                    </div>
+            </nav>
+            <section>
+                <a href="#">
+                    <img id="logoHeader" src="../assets/image/logoCafePorto/logoMax.png" alt="Logo Café do Porto">
+                </a>
+            </section>
+            <section id="navBnt">
+                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-success">Entrar</button>
+                <button type="button" href="view/cadastro.html" class="btn btn-sm btn-success">Cadastrar</button>
+            </section>
+        </header>
+
+        <!-- CARROSSEL -->
+        <!-- Adicionar conteudo -->
+        <div id="carroselBanner" class="carousel slide shadow" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carroselBanner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carroselBanner" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carroselBanner" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div style="background-color: var(--CaféDoPorto-4); height: 500px;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="background-color: var(--CaféDoPorto-2); height: 500px;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="background-color: var(--CaféDoPorto-3); height: 500px;">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carroselBanner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carroselBanner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- BANNER -->
+        <!-- Adicionar conteudo -->
+        <div id="bannerLocal" class="bannerComprido">
+            <section>
+
+            </section>
+            <section>
+
+            </section>
+        </div>
+
+        <!-- COLUNA TRIPLA -->
+        <!-- Adicionar Imagens -->
+        <div class="row gx-2">
+            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
+            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
+            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
+        </div>
+
+        <!-- RODAPÉ -->
+        <!-- Mudar para colunas -->
+        <footer>
+            <div class="d-flex flex-column align-content-center align-items-center">
+                <h1 class="text-white m-0">Café do Porto</h1>
+                <section class="text-white">
+                    <a href="" class="link-light">Home</a>
+                    -
+                    <a href="" class="link-light">Menu</a>
+                    -
+                    <a href="" class="link-light">Contato</a>
+                    -
+                    <a href="" class="link-light">Sobre</a>
+                </section>
+            </div>
+            <div class="d-flex flex-column text-white">
+                <b>Projeto Integrador II - Fatec tq</b>
+                <i>Hugo / João / Samuel / Thais</i>
+            </div>
+        </footer>
+
+    </div>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
