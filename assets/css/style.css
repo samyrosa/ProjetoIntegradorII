@@ -86,13 +86,25 @@ header#headerPag>section#navBnt {
 
 /* BANNER */
 .bannerComprido {
+    display: flex;
     min-height: 250px;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: center;
 }
 
 #bannerLocal.bannerComprido {
     background-color: var(--CaféDoPorto-5);
     color: white;
 }
+#bannerLocal.bannerComprido>section {
+    padding:  20px;    
+}
+#bannerLocal.bannerComprido>img {
+    width: 623px;
+    height: 250px;
+}
+
 
 /* RODAPÉ */
 footer {

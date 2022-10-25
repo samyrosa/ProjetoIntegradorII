@@ -22,7 +22,7 @@
                 </button>
                 <div class="offcanvas offcanvas-start" tabpaginaInicial="-1" id="navbarResp">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Café do Porto</h5>
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Café do Porto</h1>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -34,8 +34,8 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <button type="button" class="btn btn-sm btn-outline-success">Entrar</button>
-                            <button type="button" class="btn btn-sm btn-success">Cadastrar</button>
+                            <button type="button" class="btn btn-sm btn-outline-dark">Entrar</button>
+                            <button type="button" class="btn btn-sm btn-dark">Cadastrar</button>
                         </section>
                     </div>
             </nav>
@@ -45,14 +45,14 @@
                 </a>
             </section>
             <section id="navBnt">
-                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-success">Entrar</button>
-                <button type="button" href="view/cadastro.html" class="btn btn-sm btn-success">Cadastrar</button>
+                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-dark">Entrar</button>
+                <button type="button" href="view/cadastro.html" class="btn btn-sm btn-dark">Cadastrar</button>
             </section>
         </header>
 
         <!-- CARROSSEL -->
         <!-- Adicionar conteudo -->
-        <div id="carroselBanner" class="carousel slide shadow" data-bs-ride="true">
+        <div id="carroselBanner" class="carousel slide shadow d-lg-block d-none" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carroselBanner" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -88,41 +88,47 @@
         <!-- BANNER -->
         <!-- Adicionar conteudo -->
         <div id="bannerLocal" class="bannerComprido">
+            <img class="d-xl-block d-none" src="../assets/image/Background/localCafe.png" alt="">
             <section>
-
-            </section>
-            <section>
-
+                <h3>Melhor Café da Região</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur assumenda culpa esse
+                    excepturi dolorum maxime rem libero animi recusandae explicabo dignissimos aperiam pariatur dicta
+                    fugit adipisci, reprehenderit harum accusamus!</p>
+                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-light">Descobrir onde
+                    fica</button>
             </section>
         </div>
 
         <!-- COLUNA TRIPLA -->
         <!-- Adicionar Imagens -->
         <div class="row gx-2">
-            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
-            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
-            <div class="col"><img src="..." class="img-fluid" alt="..."></div>
+            <div class="col"><img src="../assets/image/cardImagem/01.png" class="img-fluid" alt="..."></div>
+            <div class="col"><img src="../assets/image/cardImagem/02.png" class="img-fluid" alt="..."></div>
+            <div class="col"><img src="../assets/image/cardImagem/03.png" class="img-fluid" alt="..."></div>
         </div>
 
         <!-- RODAPÉ -->
         <!-- Mudar para colunas -->
         <footer>
-            <div class="d-flex flex-column align-content-center align-items-center">
-                <h1 class="text-white m-0">Café do Porto</h1>
-                <section class="text-white">
-                    <a href="" class="link-light">Home</a>
-                    -
-                    <a href="" class="link-light">Menu</a>
-                    -
-                    <a href="" class="link-light">Contato</a>
-                    -
-                    <a href="" class="link-light">Sobre</a>
-                </section>
+            <div class="row w-100">
+                <div class="col-12 col-md">
+                    <h5 class="text-white m-0">Café do Porto</h5>
+                    <section class="text-white">
+                        <a href="" class="link-light">Home</a>
+                        -
+                        <a href="" class="link-light">Menu</a>
+                        -
+                        <a href="" class="link-light">Contato</a>
+                        -
+                        <a href="" class="link-light">Sobre</a>
+                    </section>
+                </div>
+                <div class="text-white d-flex flex-column al align-items-md-end col-12 col-md">
+                    <b>Projeto Integrador II - Fatec tq</b>
+                    <i>Hugo / João / Samuel / Thais</i>
+                </div>
             </div>
-            <div class="d-flex flex-column text-white">
-                <b>Projeto Integrador II - Fatec tq</b>
-                <i>Hugo / João / Samuel / Thais</i>
-            </div>
+
         </footer>
 
     </div>
