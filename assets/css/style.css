@@ -88,7 +88,6 @@ header#headerPag>section#navBnt {
 .bannerComprido {
     display: flex;
     min-height: 250px;
-    flex-direction: row;
     column-gap: 15px;
     align-items: center;
 }
@@ -98,12 +97,25 @@ header#headerPag>section#navBnt {
     color: white;
 }
 #bannerLocal.bannerComprido>section {
-    padding:  20px;    
+    padding:  20px;     
 }
 #bannerLocal.bannerComprido>img {
-    width: 623px;
+    width: auto;
     height: 250px;
+    border-radius: 0 150px 0 0;
 }
+
+@media (max-width: 1200px){
+    #bannerLocal.bannerComprido>img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 150px 0 0;
+    }
+    .bannerComprido {
+        border-radius: 0 150px 0 0;
+    }
+}
+
 
 
 /* RODAPÉ */
