@@ -19,20 +19,23 @@ a {
 
 /* HEADER */
 @media (max-width: 992px) {
-    header#headerPag>section#navBnt{
+    header#headerPag>section#navBnt {
         display: none !important;
     }
+
     nav#navHeader {
-     padding: 0 !important;
-     margin-bottom: 50px !important;
-     flex-direction: column !important;
-     align-items: flex-start !important;
+        padding: 0 !important;
+        margin-bottom: 50px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
     }
-    header{
+
+    header {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    header#headerPag{
+
+    header#headerPag {
         gap: 20px !important;
         justify-content: flex-start !important;
     }
@@ -61,12 +64,14 @@ nav#navHeader {
 div.offcanvas-body {
     background-color: var(--CaféDoPorto-3);
 }
+
 div.offcanvas-header {
     background-color: var(--CaféDoPorto-2);
     color: white;
 }
-div#navbarResp{
- width: 350px;
+
+div#navbarResp {
+    width: 350px;
 }
 
 header#headerPag>section#navBnt {
@@ -96,26 +101,124 @@ header#headerPag>section#navBnt {
     background-color: var(--CaféDoPorto-5);
     color: white;
 }
+
 #bannerLocal.bannerComprido>section {
-    padding:  20px;     
+    padding: 20px;
+    text-align: justify;
 }
+
 #bannerLocal.bannerComprido>img {
     width: auto;
     height: 250px;
     border-radius: 0 150px 0 0;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     #bannerLocal.bannerComprido>img {
         width: 100%;
         height: auto;
-        border-radius: 0 150px 0 0;
+        border-radius: 0;
     }
-    .bannerComprido {
-        border-radius: 0 150px 0 0;
+
+    
+}
+
+/* PAGINA SOBRE */
+.bannerSobre {
+    display: flex;
+    min-height: 200px;
+    flex-direction: row;
+    column-gap: 90px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.bannerSobre>img {
+    width: 500px;
+    height: 200px;
+    border-radius: 0px 100px 0px 0px
+}
+
+#bannerSobre.bannerSobre {
+    background-color: var(--CaféDoPorto-5);
+    padding: 0px 120px 0px 0px;
+    color: white;
+}
+
+#bannerHistoria.bannerSobre {
+    flex-direction: row-reverse;
+    padding: 0px 0px 0px 120px;
+    background-color: var(--CaféDoPorto-4);
+    color: black;
+}
+
+#bannerMissao.bannerSobre {
+    background-color: var(--CaféDoPorto-3);
+    padding: 0px 120px 0px 0px;
+    color: black;
+}
+
+#banner.bannerSobre {
+    flex-direction: row-reverse;
+    padding: 0px 0px 0px 120px;
+    background-color: var(--CaféDoPorto-2);
+    color: white;
+}
+
+#bannerHistoria.bannerSobre>img {
+    transform: scaleX(-1);
+}
+
+#banner.bannerSobre>img {
+    transform: scaleX(-1);
+}
+
+/* Banner Sobre resposivo */
+
+@media (max-width: 1200px) {
+    .bannerSobre {
+        height: 200px;
+        column-gap: 35px;
+    }
+
+    .bannerSobre>img {
+        width: 450px;
+        height: 200px;
+    }
+
+    #bannerSobre.bannerSobre,
+    #bannerMissao.bannerSobre {
+        padding: 0px 50px 0px 0px;
+    }
+
+    #bannerHistoria.bannerSobre,
+    #banner.bannerSobre {
+        padding: 0px 0px 0px 50px;
     }
 }
 
+@media (max-width:992px) {
+
+    #bannerSobre.bannerSobre,
+    #bannerHistoria.bannerSobre,
+    #bannerMissao.bannerSobre,
+    #banner.bannerSobre {
+        padding: 50px;
+    }
+}
+
+@media (max-width:430px) {
+
+    #bannerSobre.bannerSobre,
+    #bannerHistoria.bannerSobre,
+    #bannerMissao.bannerSobre,
+    #banner.bannerSobre {
+        padding: 20px;
+        height: 300px;
+
+    }
+}
 
 
 /* RODAPÉ */
