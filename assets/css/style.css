@@ -138,6 +138,8 @@ header#headerPag>section#navBnt {
     align-items: center;
     justify-content: space-around;
     text-align: justify;
+    font-size: 0.9rem;
+
 }
 
 .bannerSobre>img {
@@ -214,7 +216,7 @@ header#headerPag>section#navBnt {
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:500px) {
 
     #bannerSobre.bannerSobre,
     #bannerHistoria.bannerSobre,
