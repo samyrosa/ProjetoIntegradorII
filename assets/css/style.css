@@ -231,12 +231,20 @@ header#headerPag>section#navBnt {
 
 /* RODAPÉ */
 footer {
-    min-height: 250px;
+    min-height: 200px;
     background-color: var(--CaféDoPorto-1);
-    padding: 50px 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 200px;
+    padding: 70px;
+}
+
+@media (max-width:770px) {
+    footer {
+        padding: 30px 10px 20px;
+        min-height: 100px;
+
+    }
+    #footer {
+        padding-left: 18px;
+        gap: 20px;
+        font-size: 0.8rem;
+    }
 }
