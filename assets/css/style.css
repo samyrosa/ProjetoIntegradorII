@@ -228,6 +228,7 @@ header#headerPag>section#navBnt {
     }
 }
 
+/* PAGINA LOGIN */
 
 /* RODAPÉ */
 footer {
@@ -242,6 +243,7 @@ footer {
         min-height: 100px;
 
     }
+
     #footer {
         padding-left: 18px;
         gap: 20px;
