@@ -254,13 +254,15 @@ footer {
 
 
 /* CARDAPIO PAGE */
-div.card{
+div.card {
     border-radius: 0;
+    min-width: 130px;
 }
-p.card-text{
+
+p.card-text {
     font-size: 12px;
 }
 
-div.cardCardapio{
+div.cardCardapio {
     background-color: var(--CaféDoPorto-4);
 }
