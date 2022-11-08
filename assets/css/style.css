@@ -266,3 +266,22 @@ p.card-text {
 div.cardCardapio {
     background-color: var(--CaféDoPorto-4);
 }
+
+
+/* CONTATO */
+#formularioContato {
+    background-color: var(--CaféDoPorto-2);
+    height: 700px;
+}
+
+#informacaoDeContato{
+    background-color: var(--CaféDoPorto-4);
+    height: 150px;
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+#informacaoDeContato > section > .bi {
+    font-size: 50px;
+}

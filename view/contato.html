@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Café do Porto</title>
-
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/image/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/image/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/image/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/image/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/image/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/image/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/image/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/image/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/image/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/image/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/image/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/image/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/image/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/image/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/image/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    <link rel="shortcut icon" href="../assets/image/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
-
 <body>
     <div class="container-lg py-3 d-flex flex-column gap-3">
         <header id="headerPag" class="navbar shadow py-0">
@@ -51,8 +32,8 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
-                            <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
+                            <button type="button" class="btn btn-sm btn-outline-success">Entrar</button>
+                            <button type="button" class="btn btn-sm btn-success">Cadastrar</button>
                         </section>
                     </div>
             </nav>
@@ -62,11 +43,10 @@
                 </a>
             </section>
             <section id="navBnt">
-                <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
-                <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
+                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-success">Entrar</button>
+                <button type="button" href="view/cadastro.html" class="btn btn-sm btn-success">Cadastrar</button>
             </section>
         </header>
-        <main>
             <header class="d-flex justify-content-between align-content-end border-bottom pb-2 px-2">
                 <h4 class="m-0 text-white">Contato<span id="TituloPag"></span> </h4>
                 <nav class="text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -76,32 +56,52 @@
                     </ol>
                 </nav>
             </header>
-        </main>
-        <!-- RODAPÉ -->
-        <footer>
-            <div id="footer" class="row w-100 text-white text-center  ">
-                <div class="col-md-6">
-                    <h5>Café do Porto</h5>
-                    <section>
-                        <a href="" class="link-light">Home</a>
-                        -
-                        <a href="" class="link-light">Menu</a>
-                        -
-                        <a href="" class="link-light">Contato</a>
-                        -
-                        <a href="" class="link-light">Sobre</a>
-                    </section>
-                </div>
-                <div class="col-md-6 d-flex flex-column ">
-                    <b>Projeto Integrador II - Fatec tq</b>
-                    <i>Hugo / João / Samuel / Thais</i>
-                </div>
+            <div id="formularioContato">
+                <section>
+                    <h1>Fale Conosco!!</h1>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="Nome" class="form-control">
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text" name="E-mail" class="form-control">
+                    <label for="Telefone">Telefone:</label>
+                    <input type="tel" name="Telefone" class="form-control">
+                    <label for="Mensagem">Mensagem:</label>
+                    <textarea name="Mensagem" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <input type="button" class="btn btn-outline-light" value="Limpar">
+                    <input type="button" class="btn btn-light" value="Enviar">
+                </section>
+                <section>
+
+                </section>
+            </div>
+            <div id="informacaoDeContato" class="row gx-1">
+                <section class="col">
+                    <i class="bi bi-geo-alt-fill"></i>
                 <div>
-        </footer>
+                    <b>Endereço</b>
+                    <p>Avenida Lorem Ipsum, 785 Holambra - SP, 13825-000</p>
+                </div>
+                </section>
+                    
+                <section class="col">
+                    <i class="bi bi-envelope-fill"></i>
+                <div>
+                    <b>E-Mail</b>
+                    <p>contatoSAC@cafedoporto.com</p>
+                </div>
+                </section>
+
+                <section class="col">
+                    <i class="bi bi-telephone-fill"></i>
+                <div>
+                    <b>Telefone</b>
+                    <p>(19) 2390-8352</p>
+                </div>
+                </section>
+            </div>
     </div>
 
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
-
 </html>
