@@ -294,6 +294,7 @@ div.cardCardapio {
     background-image: url("../image/Background/fundoLogin.png");
     background-size: cover;
     margin: 0px;
+
 }
 
 #boxLogin>section {
@@ -307,19 +308,27 @@ div.cardCardapio {
     min-width: 450px;
     border-radius: 120px 0px 0px;
     margin: 50px;
+    padding: 0px 60px;
 }
 
 /* login responsivo */
 
 @media (max-width:550px) {
-    #boxLogin{
+    #boxLogin {
         background-image: none;
+        display: block;
     }
 
     #boxLogin>section {
+        display: block;
+        box-sizing: border-box;
         min-height: 450px;
-        min-width: 350px;
-        border-radius: 120px 0px 0px;
-        margin: 50px;
+        min-width: 0;
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+        opacity: 100%;
+        padding: 40px 50px;
+
     }
 }
