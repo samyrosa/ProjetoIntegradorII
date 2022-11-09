@@ -69,6 +69,37 @@
                 <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
             </section>
         </header>
+        <main>
+            <header class="d-flex justify-content-between align-content-end border-bottom pb-2 px-2">
+                <h4 class="m-0 text-white">Entrar<span id="TituloPag"></span> </h4>
+                <nav class="text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0 text-white">
+                        <li class="breadcrumb-item text-white"><a href="#" class="link-light fw-bold">Início</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Entrar</li>
+                    </ol>
+                </nav>
+            </header>
+        </main>
+
+        <div id="boxLogin" class="text-light">
+            <section>
+                <h2>Entrar</h2>
+                <div class="py-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="emailLogin" id="emailLogin">
+                </div>
+                <div class="py-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="senhaLogin" id="senhaLogin">
+                    <a href="" class="link-light">Esqueceu a senha?</a>
+                </div>
+                <div >
+                    <button type="button" href="view/login.html" class="btn btn-sm btn-outline-light mx-3 ">Entrar </button>
+                    <button type="button" href="view/login.html" class="btn btn-sm btn-light text-end">Cadastrar-se</button>
+                </div>
+            </section>
+        </div>
+
         <!-- RODAPÉ -->
         <footer>
             <div id="footer" class="row w-100 text-white text-center  ">
@@ -91,7 +122,7 @@
                 <div>
         </footer>
     </div>
-    
+
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
