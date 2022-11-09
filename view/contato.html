@@ -40,22 +40,23 @@
                 </button>
                 <div class="offcanvas offcanvas-start" tabpaginaInicial="-1" id="navbarResp">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Café do Porto</h5>
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Café do Porto</h1>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-flex flex-column">
                         <nav id="navHeader" class="gap-2">
-                            <a class="nav-link" href="paginaInicial.html">Home</a>
+                            <a class="nav-link fw-bold" href="paginaInicial.html">Home</a>
                             <a class="nav-link" href="cardapio.html">Cardápio</a>
-                            <a class="nav-link fw-bold" href="contato.html">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <button type="button" class="btn btn-sm btn-outline-success">Entrar</button>
-                            <button type="button" class="btn btn-sm btn-success">Cadastrar</button>
+                            <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                            <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
                         </section>
                     </div>
+                </div>
             </nav>
             <section>
                 <a href="#">
@@ -63,18 +64,9 @@
                 </a>
             </section>
             <section id="navBnt">
-                <button type="button" href="view/login.html" class="btn btn-sm btn-outline-success">Entrar</button>
-                <button type="button" href="view/cadastro.html" class="btn btn-sm btn-success">Cadastrar</button>
+                <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
             </section>
-        </header>
-        <header class="d-flex justify-content-between align-content-end border-bottom pb-2 px-2">
-            <h4 class="m-0 text-white">Contato<span id="TituloPag"></span> </h4>
-            <nav class="text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb m-0 text-white">
-                    <li class="breadcrumb-item text-white"><a href="#" class="link-light fw-bold">Início</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contato</li>
-                </ol>
-            </nav>
         </header>
         <div class="row gx-1" id="formularioContato">
             <section class="col-12 col-lg-5 p-5 text-white d-flex flex-column gap-2">
