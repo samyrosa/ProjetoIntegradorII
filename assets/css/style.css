@@ -276,11 +276,12 @@ div.cardCardapio {
 }
 
 section#mapaContato {
-    background-color: #E8E2C2 !important;
+    background-image: url('../image/Background/mapa.png') !important;
+    filter: blur(2px);
     border-radius: 200px 0 0 0;
 }
 
-#informacaoDeContato{
+#informacaoDeContato {
     background-color: var(--CaféDoPorto-4);
     height: 150px;
     padding: 20px;
@@ -288,7 +289,7 @@ section#mapaContato {
     box-sizing: border-box;
 }
 
-#informacaoDeContato > section > .bi {
+#informacaoDeContato>section>.bi {
     font-size: 50px;
 }
 
@@ -318,7 +319,7 @@ section#mapaContato {
 /* login responsivo */
 
 @media (max-width:550px) {
-    #boxLogin{
+    #boxLogin {
         background-image: none;
     }
 
