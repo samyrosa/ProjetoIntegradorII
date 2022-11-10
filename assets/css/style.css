@@ -256,7 +256,10 @@ footer {
 /* CARDAPIO PAGE */
 div.card {
     border-radius: 0;
-    min-width: 130px;
+}
+
+div.card-body{
+    min-height: 140px;
 }
 
 p.card-text {
@@ -265,6 +268,7 @@ p.card-text {
 
 div.cardCardapio {
     background-color: var(--CaféDoPorto-4);
+    /* min-width: 130px; */
 }
 
 
