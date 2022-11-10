@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../assets/image/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../assets/image/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/image/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/image/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/image/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/image/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../assets/image/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/image/favicon/favicon-16x16.png">
@@ -27,6 +28,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container-lg py-3 d-flex flex-column gap-2">
         <header id="headerPag" class="navbar shadow py-0">
@@ -49,7 +51,7 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                            <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                             <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
                         </section>
                     </div>
@@ -60,10 +62,68 @@
                 </a>
             </section>
             <section id="navBnt">
-                <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                 <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
             </section>
         </header>
+        <!-- CADASTRO -->
+        <div id="boxCadastro" class="row text-light ">
+            <div id="ClubeCadastro"class="col-md-6 d-flex flex-column "">
+                <section >
+                    <div id="Sorteio"class="col">gdfh</div>
+                    <div id="Pontos" class="col">dfgh</div>
+                    <div id="Premios"class="col">dfg</div>
+                </section>
+            </div>
+            <div class="col-md-6" id="Cadastro">
+                <section>
+                    <h2>Cadastro</h2>
+                    <div class="row my-3">
+                        <div class="col-6 ">
+                            <label for="NomeCadastro" class="form-label">Nome</label>
+                            <input type="text" class="form-control" name="NomeCadastro" id="NomeCadastro">
+                        </div>
+                        <div class="col-6">
+                            <label for="SobreCadastro" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" name="SobreCadastro" id="SobreCadastro">
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <label for="EmailCadastro" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" name="EmailCadastro" id="EmailCadastro">
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <label for="DNCadastro" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" name="DNCadastro" id="DNCadastro">
+                        </div>
+                        <div class="col-6">
+                            <label for="cpfCadastro" class="form-label">CPF</label>
+                            <input type="text" class="form-control" name="cpfCadastro" id="cpfCadastro">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <label for="Senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" name="Senha" id="Senha">
+                        </div>
+                        <div class="col-6">
+                            <label for="ConfCadastro" class="form-label">Confirmar Senha</label>
+                            <input type="password" class="form-control" name="ConfCadastro" id="ConfCadastro">
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-6">
+                            <a class="link-light" href="login.html">Já sou cadastrado</a>
+                        </div>
+                        <div class="col-6 text-end">
+                            <button type="button" href="view/login.html" class=" btn btn-light">Cadastro</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
         <!-- RODAPÉ -->
         <footer>
             <div id="footer" class="row w-100 text-white text-center  ">
@@ -83,11 +143,12 @@
                     <b>Projeto Integrador II - Fatec tq</b>
                     <i>Hugo / João / Samuel / Thais</i>
                 </div>
-            <div>
+                <div>
         </footer>
-    </div>   
-    
+    </div>
+
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
+
 </html>

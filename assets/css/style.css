@@ -309,7 +309,7 @@ section#mapaContato {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3F0300;
+    background-color: var(--CaféDoPorto-5);
     opacity: 90%;
     min-height: 450px;
     min-width: 450px;
@@ -338,4 +338,50 @@ section#mapaContato {
         padding: 40px 50px;
 
     }
+}
+
+/* PAGINA CADASTRO */
+#boxCadastro {
+    background-image: url("../image/Background/FundoCadastro.png");
+    background-size: cover;
+    margin: 0px;
+    padding: 20px 60px 0px;
+}
+
+#Cadastro>section {
+    background-color:var(--CaféDoPorto-1);
+    opacity: 90%;
+    min-height: 450px;
+    border-radius: 0px 120px 0px 0px;
+    padding: 50px 60px ;
+} 
+#ClubeCadastro>section{
+    min-height: 180px;
+}
+
+#Sorteio{
+    background-color: var(--CaféDoPorto-2);
+    opacity: 90%;
+    border-radius: 100px 0px 0px 100px;
+}
+#Pontos{
+    background-color: var(--CaféDoPorto-3);
+    opacity: 90%;
+    border-radius: 100px 0px 0px 100px;
+}
+#Premios{
+    background-color:var(--CaféDoPorto-5);
+    opacity: 90%;
+    border-radius: 100px 0px 0px 100px;
+}
+/* RESPOSIVO PAGINA CADASTRO */
+@media (max-width:1000px) {
+    #Cadastro>section {
+        background-color:var(--CaféDoPorto-1);
+        opacity: 90%;
+        min-height: 450px;
+        min-width: 450px; 
+        border-radius: 0px 120px 0px 0px;
+        padding: 20px 60px ;
+    }     
 }
