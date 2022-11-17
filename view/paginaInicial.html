@@ -29,6 +29,14 @@
 </head>
 
 <body>
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
     <div class="container-lg py-3 d-flex flex-column gap-3">
         <!-- BARRA DE NAVEGAÇÃO -->
         <!-- Tornar responsivo -->
@@ -52,7 +60,7 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                            <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                             <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
                         </section>
                     </div>
@@ -64,7 +72,7 @@
                 </a>
             </section>
             <section id="navBnt">
-                <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                 <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
             </section>
         </header>
@@ -142,12 +150,19 @@
                     <b>Projeto Integrador II - Fatec tq</b>
                     <i>Hugo / João / Samuel / Thais</i>
                 </div>
-            <div>
+                <div>
         </footer>
 
     </div>
+   
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+
+    <!-- VLIBRAS -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
