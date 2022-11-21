@@ -27,6 +27,29 @@
 
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        p.textBloco {
+            font-size: small;
+        }
+
+        h3.tituloBloco {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 13px;
+        }
+
+        .BlocoCadastro{
+            padding: 15px;
+        }
+        div.BlocoCadastro>.bi{
+            font-size: 65px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -67,85 +90,100 @@
             </section>
         </header>
         <!-- CADASTRO -->
-        <div id="boxCadastro" class="row text-light ">
-            <div id="ClubeCadastro"class="col-md-6 d-flex flex-column "">
-                <section >
-                    <!-- <div id="Sorteio"class="col">gdfh</div>
-                    <div id="Pontos" class="col">dfgh</div>
-                    <div id="Premios"class="col">dfg</div> -->
+        <div id="boxCadastro" class="row text-light">
+            <div id="ClubeCadastro" class="col-md-7 d-flex flex-column ">
+                <section class="row gy-3 px-4">
+                    <div id="Sorteio" class="BlocoCadastro col-12 d-flex flex-row">
+                            <i class="bi bi-trophy-fill"></i>
+                        <div>
+                            <h3 class="tituloBloco">Participe de Sorteios</h3>
+                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum. </p>
+                        </div>
+                    </div>
+                    <div id="Pontos" class="BlocoCadastro col-12 d-flex flex-row text-bg-light">
+                            <i class="bi bi-award-fill"></i>
+                        <div>
+                            <h3 class="tituloBloco">Acumule Pontos nas Compras</h3>
+                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum.</p>
+                        </div>
+                    </div>
+                    <div id="Premios" class="BlocoCadastro col-12 d-flex flex-row">
+                            <i class="bi bi-cup-hot-fill"></i>
+                        <div>
+                            <h3 class="tituloBloco">Ganhe Premios Especias</h3>
+                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum.</p>
+                        </div>
+                    </div>
                 </section>
             </div>
-            <div class="col-md-6" id="Cadastro">
-                <section>
-                    <h2>Cadastro</h2>
-                    <div class="row my-3">
-                        <div class="col-6 ">
-                            <label for="NomeCadastro" class="form-label">Nome</label>
-                            <input type="text" class="form-control" name="NomeCadastro" id="NomeCadastro">
-                        </div>
-                        <div class="col-6">
-                            <label for="SobreCadastro" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" name="SobreCadastro" id="SobreCadastro">
-                        </div>
+            <div class="col-md" id="Cadastro">
+                <h2>Cadastro</h2>
+                <div class="row g-2">
+                    <div class="col-6 ">
+                        <label for="NomeCadastro" class="form-label form-label-sm">Nome</label>
+                        <input type="text" class="form-control form-control-sm" name="NomeCadastro" id="NomeCadastro">
                     </div>
-                    <div class="col my-3">
-                        <label for="EmailCadastro" class="form-label">E-mail</label>
-                        <input type="text" class="form-control" name="EmailCadastro" id="EmailCadastro">
+                    <div class="col-6">
+                        <label for="SobreCadastro" class="form-label form-label-sm">Sobrenome</label>
+                        <input type="text" class="form-control form-control-sm" name="SobreCadastro" id="SobreCadastro">
                     </div>
-                    <div class="row my-3">
-                        <div class="col-6">
-                            <label for="DNCadastro" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" name="DNCadastro" id="DNCadastro">
-                        </div>
-                        <div class="col-6">
-                            <label for="cpfCadastro" class="form-label">CPF</label>
-                            <input type="text" class="form-control" name="cpfCadastro" id="cpfCadastro">
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-6">
-                            <label for="Senha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" name="Senha" id="Senha">
-                        </div>
-                        <div class="col-6">
-                            <label for="ConfCadastro" class="form-label">Confirmar Senha</label>
-                            <input type="password" class="form-control" name="ConfCadastro" id="ConfCadastro">
-                        </div>
-                    </div>
-                    <div class="row my-5">
-                        <div class="col-6">
-                            <a class="link-light" href="login.html">Já sou cadastrado</a>
-                        </div>
-                        <div class="col-6 text-end">
-                            <button type="button" href="view/login.html" class=" btn btn-light">Cadastro</button>
-                        </div>
+                    <div class="col-12">
+                        <label for="EmailCadastro" class="form-label form-label-sm">E-mail</label>
+                        <input type="text" class="form-control form-control-sm" name="EmailCadastro" id="EmailCadastro">
                     </div>
 
-                </section>
+                    <div class="col-6">
+                        <label for="DNCadastro" class="form-label form-label-sm">Nascimento</label>
+                        <input type="date" class="form-control form-control-sm" name="DNCadastro" id="DNCadastro">
+                    </div>
+                    <div class="col-6">
+                        <label for="cpfCadastro" class="form-label form-label-sm">CPF</label>
+                        <input type="text" class="form-control form-control-sm" name="cpfCadastro" id="cpfCadastro">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="Senha" class="form-label form-label-sm">Senha</label>
+                        <input type="password" class="form-control form-control-sm" name="Senha" id="Senha">
+                    </div>
+                    <div class="col-6">
+                        <label for="ConfCadastro" class="form-label form-label-sm">Confirmar Senha</label>
+                        <input type="password" class="form-control form-control-sm" name="ConfCadastro"
+                            id="ConfCadastro">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 text-end">
+                        <button type="button" href="view/login.html" class=" btn btn-sm btn-light">Cadastro</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- RODAPÉ -->
-        <footer>
-            <div id="footer" class="row w-100 text-white text-center  ">
-                <div class="col-md-6">
-                    <h5>Café do Porto</h5>
-                    <section>
-                        <a href="" class="link-light">Início</a>
-                        -
-                        <a href="" class="link-light">Menu</a>
-                        -
-                        <a href="" class="link-light">Contato</a>
-                        -
-                        <a href="" class="link-light">Sobre</a>
-                    </section>
-                </div>
-                <div class="col-md-6 d-flex flex-column ">
-                    <b>Projeto Integrador II - Fatec tq</b>
-                    <i>Hugo / João / Samuel / Thais</i>
-                </div>
-                <div>
-        </footer>
     </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div id="footer" class="row w-100 text-white text-center  ">
+            <div class="col-md-6">
+                <h5>Café do Porto</h5>
+                <section>
+                    <a href="" class="link-light">Início</a>
+                    -
+                    <a href="" class="link-light">Menu</a>
+                    -
+                    <a href="" class="link-light">Contato</a>
+                    -
+                    <a href="" class="link-light">Sobre</a>
+                </section>
+            </div>
+            <div class="col-md-6 d-flex flex-column ">
+                <b>Projeto Integrador II - Fatec tq</b>
+                <i>Hugo / João / Samuel / Thais</i>
+            </div>
+            <div>
+    </footer>
 
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
