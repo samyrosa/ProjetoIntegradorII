@@ -258,7 +258,7 @@ div.card {
     border-radius: 0;
 }
 
-div.card-body{
+div.card-body {
     min-height: 140px;
 }
 
@@ -381,13 +381,8 @@ section#mapaContato {
 
 
 /* RESPOSIVO PAGINA CADASTRO */
-@media (max-width:1000px) {
-    #Cadastro>section {
-        background-color: var(--CaféDoPorto-1);
-        opacity: 90%;
-        min-height: 450px;
-        min-width: 450px;
-        border-radius: 0px 120px 0px 0px;
-        padding: 20px 60px;
+@media (max-width:767px) {
+    #Cadastro{
+        margin-top: 2.5%;
     }
 }

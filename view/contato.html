@@ -31,6 +31,15 @@
 </head>
 
 <body>
+
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
     <div class="container-lg py-3 d-flex flex-column gap-3">
         <header id="headerPag" class="navbar shadow py-0">
             <nav class="navbar navbar-expand-lg ">
@@ -52,19 +61,19 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </nav>
                         <section id="navBnt" class="d-flex flex-column gap-2 d-lg-none">
-                            <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                            <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                             <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
                         </section>
                     </div>
                 </div>
             </nav>
             <section>
-                <a href="#">
+                <a href="paginaInicial.html">
                     <img id="logoHeader" src="../assets/image/logoCafePorto/logoMax.png" alt="Logo Café do Porto">
                 </a>
             </section>
             <section id="navBnt">
-                <a href="login.html"  type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
+                <a href="login.html" type="button" class="btn btn-sm btn-outline-dark">Entrar</a>
                 <a href="cadastro.html" type="button" class="btn btn-sm btn-dark">Cadastrar</a>
             </section>
         </header>
@@ -72,7 +81,8 @@
             <h4 class="m-0 text-white">Contato<span id="TituloPag"></span> </h4>
             <nav class="text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb m-0 text-white">
-                    <li class="breadcrumb-item text-white"><a href="#" class="link-light fw-bold"><i class="bi bi-house-fill"></i></a></li>
+                    <li class="breadcrumb-item text-white"><a href="paginaInicial.html" class="link-light fw-bold"><i
+                                class="bi bi-house-fill"></i></a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Contato</li>
                 </ol>
             </nav>
@@ -83,9 +93,9 @@
                 <label for="Nome">Nome:</label>
                 <input type="text" name="Nome" class="form-control">
                 <label for="E-mail">E-mail:</label>
-                <input type="text" name="E-mail" class="form-control">
+                <input type="text" name="E-mail" class="form-control" placeholder="seu@email.com">
                 <label for="Telefone">Telefone:</label>
-                <input type="tel" name="Telefone" class="form-control">
+                <input type="tel" name="Telefone" class="form-control" placeholder="(16)12345-6789">
                 <label for="Mensagem">Mensagem:</label>
                 <textarea name="Mensagem" id="" cols="20" rows="5" class="form-control"></textarea>
 
@@ -124,35 +134,39 @@
                 </div>
             </section>
         </div>
-    
+
     </div>
-     <!-- RODAPÉ -->
-     <footer>
+    <!-- RODAPÉ -->
+    <footer>
         <div id="footer" class="row w-100 text-white text-center  ">
             <div class="col-md-6">
                 <h5>Café do Porto</h5>
                 <section>
-                    <a href="" class="link-light">Início</a>
+                    <a href="paginaInicial.html" class="link-light">Início</a>
                     -
-                    <a href="" class="link-light">Menu</a>
+                    <a href="cardapio.html" class="link-light">Menu</a>
                     -
-                    <a href="" class="link-light">Contato</a>
+                    <a href="contato.html" class="link-light">Contato</a>
                     -
-                    <a href="" class="link-light">Sobre</a>
+                    <a href="sobre.html" class="link-light">Sobre</a>
                 </section>
             </div>
             <div class="col-md-6 d-flex flex-column ">
                 <b>Projeto Integrador II - Fatec tq</b>
                 <i>Hugo / João / Samuel / Thais</i>
             </div>
-        <div>
+            <div>
     </footer>
-
-    
 
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../assets/js/script.js"></script>
+
+     <!-- VLIBRAS -->
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+         new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
 </body>
 
 </html>

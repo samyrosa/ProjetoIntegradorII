@@ -42,10 +42,11 @@
             font-size: 13px;
         }
 
-        .BlocoCadastro{
+        .BlocoCadastro {
             padding: 15px;
         }
-        div.BlocoCadastro>.bi{
+
+        div.BlocoCadastro>.bi {
             font-size: 65px;
         }
     </style>
@@ -53,6 +54,14 @@
 </head>
 
 <body>
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
     <div class="container-lg py-3 d-flex flex-column gap-2">
         <header id="headerPag" class="navbar shadow py-0">
             <nav class="navbar navbar-expand-lg ">
@@ -80,7 +89,7 @@
                     </div>
             </nav>
             <section>
-                <a href="#">
+                <a href="paginaInicial.html">
                     <img id="logoHeader" src="../assets/image/logoCafePorto/logoMax.png" alt="Logo Café do Porto">
                 </a>
             </section>
@@ -94,7 +103,8 @@
             <h4 class="m-0 text-white">Cardápio<span id="TituloPag"></span> </h4>
             <nav class="text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb m-0 text-white">
-                    <li class="breadcrumb-item text-white"><a href="#" class="link-light fw-bold"><i class="bi bi-house-fill"></i></a></li>
+                    <li class="breadcrumb-item text-white"><a href="paginaInicial.html" class="link-light fw-bold"><i
+                                class="bi bi-house-fill"></i></a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Cardápio</li>
                 </ol>
             </nav>
@@ -104,27 +114,29 @@
             <div id="ClubeCadastro" class="col-md-7 d-flex flex-column ">
                 <section class="row gy-3 px-4">
                     <div id="Sorteio" class="BlocoCadastro col-12 d-flex flex-row">
-                            <i class="bi bi-trophy-fill"></i>
-                        <div>
+                        <i class="bi bi-trophy-fill"></i>
+                        <div class="mx-2">
                             <h3 class="tituloBloco">Participe de Sorteios</h3>
-                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum. </p>
+                            <p class="textBloco">Além de ter uma experiência maravilhosa com nossos cafés e biscoitos,
+                                você ainda pode concorrer sorteios surpreendes. Venha fazer parte do Clube do Porto!</p>
                         </div>
                     </div>
                     <div id="Pontos" class="BlocoCadastro col-12 d-flex flex-row text-bg-light">
-                            <i class="bi bi-award-fill"></i>
-                        <div>
+                        <i class="bi bi-award-fill"></i>
+                        <div class="mx-1">
                             <h3 class="tituloBloco">Acumule Pontos nas Compras</h3>
-                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum.</p>
+                            <p class="textBloco">Quando mais você consume, mais pontos você consegue, podendo trocar por
+                                cafés, lanches, o que você quiser. Essa é só algumas das vantagens de fazer parte do
+                                Clube do Porto!</p>
                         </div>
                     </div>
                     <div id="Premios" class="BlocoCadastro col-12 d-flex flex-row">
-                            <i class="bi bi-cup-hot-fill"></i>
-                        <div>
+                        <i class="bi bi-cup-hot-fill"></i>
+                        <div class="mx-2">
                             <h3 class="tituloBloco">Ganhe Premios Especias</h3>
-                            <p class="textBloco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                                tristique ac nisl a pellentesque. Integer a justo eu purus consequat fermentum.</p>
+                            <p class="textBloco">Com o Clube do Porto, você tem mais chances de concorrer prêmios
+                                especias nas nossas datas comemorativas. Podendo ganhar prêmios para consumir na loja ou
+                                para você mesmo, venha fazer parte!</p>
                         </div>
                     </div>
                 </section>
@@ -179,13 +191,13 @@
             <div class="col-md-6">
                 <h5>Café do Porto</h5>
                 <section>
-                    <a href="" class="link-light">Início</a>
+                    <a href="paginaInicial.html" class="link-light">Início</a>
                     -
-                    <a href="" class="link-light">Menu</a>
+                    <a href="cardapio.html" class="link-light">Menu</a>
                     -
-                    <a href="" class="link-light">Contato</a>
+                    <a href="contato.html" class="link-light">Contato</a>
                     -
-                    <a href="" class="link-light">Sobre</a>
+                    <a href="sobre.html" class="link-light">Sobre</a>
                 </section>
             </div>
             <div class="col-md-6 d-flex flex-column ">
@@ -197,6 +209,12 @@
 
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    
+    <!-- VLIBRAS -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
