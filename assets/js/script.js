@@ -43,3 +43,11 @@ function VerificarLogin() {
         swal("Bem-Vindo", "Seu login foi realizado com sucesso.", "success");
     }
 }
+
+// Botão Limpar do contato
+function LimparContato(){
+    document.getElementById('NomeContato').value = "";
+    document.getElementById('EmailContato').value = "";
+    document.getElementById('TelefoneContato').value = "";
+    document.getElementById('MgsContato').value = "";
+}
