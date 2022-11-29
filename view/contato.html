@@ -31,7 +31,6 @@
 </head>
 
 <body>
-
     <!-- VLIBRAS -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -91,17 +90,19 @@
             <section class="col-12 col-lg-5 p-5 text-white d-flex flex-column gap-2">
                 <h3 class="fw-bold">Fale Conosco!!</h3>
                 <label for="Nome">Nome:</label>
-                <input type="text" name="Nome" class="form-control">
+                <input type="text" class="form-control" name="NomeContato" id="NomeContato">
                 <label for="E-mail">E-mail:</label>
-                <input type="text" name="E-mail" class="form-control" placeholder="seu@email.com">
+                <input type="text" class="form-control" name="EmailContato" id="EmailContato"
+                    placeholder="seu@email.com">
                 <label for="Telefone">Telefone:</label>
-                <input type="tel" name="Telefone" class="form-control" placeholder="(16)12345-6789">
+                <input type="tel" class="form-control" name="TelefoneContato" id="TelefoneContato"
+                    placeholder="(16)12345-6789">
                 <label for="Mensagem">Mensagem:</label>
-                <textarea name="Mensagem" id="" cols="20" rows="5" class="form-control"></textarea>
+                <textarea name="MgsContato" id="MgsContato" cols="20" rows="5" class="form-control"></textarea>
 
                 <div class="d-flex flex-row justify-content-end gap-3 mt-3">
-                    <input type="button" class="btn btn-outline-light" value="Limpar">
-                    <input type="button" class="btn btn-light" value="Enviar">
+                    <button type="button" class="btn btn-outline-light">Limpar</button>
+                    <button onclick="VerificarContato()" type="button" class="btn btn-light">Enviar</button>
                 </div>
 
             </section>
@@ -157,16 +158,17 @@
             </div>
             <div>
     </footer>
-
+    
     <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-     <!-- VLIBRAS -->
-     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-     <script>
-         new window.VLibras.Widget('https://vlibras.gov.br/app');
-     </script>
+
+    <!-- VLIBRAS -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
