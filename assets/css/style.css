@@ -256,6 +256,7 @@ footer {
 /* CARDAPIO PAGE */
 div.card {
     border-radius: 0;
+    border: 0;
 }
 
 div.card-body {
@@ -271,8 +272,9 @@ div.cardCardapio {
     /* min-width: 130px; */
 }
 
-div.imgCardapio{
-    width: 120px;
+img.imgCardapio{
+    /* border-radius: 0 50px 0 0; */
+    width: 100%;
     height: 140px;
     object-fit: cover;
 }
